@@ -1,0 +1,89 @@
+body {
+    width: 1920px;
+}
+.nav {
+    margin-left: 200px;
+    overflow: hidden;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+li {
+    float: right;
+    margin-right: 50px;
+}
+.logo {
+    margin-left: 700px;
+    transform: scale(.4);
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1px;
+    text-decoration: none;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+li a:hover {
+    color: #545454;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Archivo Black', sans-serif;
+    color: #105297;
+    text-align: justify;
+    line-height: 1.4em;
+}
+.slides {
+    width: 100%;
+    position: relative;
+}
+
+
+.blockquote-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translateX(-50%,25%);
+    transform: translate(-50%,25%);
+
+}
+#randomquote{
+    position: relative;
+}
+
+#randomquote p {
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#randomquote cite {
+    color: black;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+}
+footer {
+    width: 93.5%;
+    height: 25px;
+    background-color: #545454;
+    font-family: 'Archivo Black', sans-serif;
+    padding: 1%;
+    margin: 0 auto;
+}
+footer p {
+    color: white;
+    text-align: center;
+
+}

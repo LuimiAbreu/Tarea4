@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eric Thomas Motivation </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li><a href="index.html">CONTACT</a></li>
+        <li><a href="index.html">ABOUT</a></li>
+        <li><a href="index.html">HOME</a></li>
+        
+    </ul>
+</div>
+<img class="logo" src="images/logoe.png">
+<!-- Aqui comienza la frase del dia -->
+ <blockquote id="randomquote">
+  	<img class="slides" src="images/patron.jpg">
+  	<div class="blockquote-text">
+	    <p></p>
+	    <cite></cite>
+	</div>
+</blockquote>
+<script>
+	var myQuotes = [{
+    quote: " When you want to succeed as bad as you want to breathe, then you’ll be successful.",
+    cite: "Eric Thomas",
+}, {
+    quote: "Pain is temporary. It may last for a minute, or an hour or a day, or even a year. But eventually, it will subside. And something else take its place. If I quit, however, it will last forever.",
+    cite: "Eric Thomas",
+}, {
+    quote: "Information changes situations.",
+    cite: "Eric Thomas",
+}];
+
+var randomQuote = Math.floor(Math.random() * myQuotes.length)
+
+$('p', '#randomquote').text(myQuotes[randomQuote].quote);
+$('cite', '#randomquote').attr('href', myQuotes[randomQuote].url).text("" + myQuotes[randomQuote].cite);
+</script>                      
+<script src=”js/script.js”></script>
+<footer>
+    <p> Copyright 2017 - ALL RIGHTS RESERVED. </p>
+</footer>
+</body>
+</html>
